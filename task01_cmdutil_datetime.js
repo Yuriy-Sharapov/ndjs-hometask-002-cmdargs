@@ -21,4 +21,21 @@ const argv = yargs(hideBin(process.argv))       // Обрабатываем ар
     })     
     .argv
 
-console.log(new Date())
+if (process.argv.slice(2).length === 0){
+    console.log(new Date().toISOString())
+}
+else {
+    process.argv.slice(2).forEach(element => {
+        switch (element) {
+            case "-y":
+                console.log(new Date().getFullYear());
+                break;
+            case "-m":
+                console.log(new Date().getMonth());
+                break;
+            case "-d":
+                console.log(new Date().getDate());
+                break;                
+        }
+    })
+}

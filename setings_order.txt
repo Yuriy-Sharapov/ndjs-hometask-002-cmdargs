@@ -1,7 +1,11 @@
 ----------------Для задание короткой команды для терминала:----------------
 1. В package.json добаить раздел
 
-"bin": { "current": "task01_cmdutil_datetime.js" }
+"bin": {
+    "mycurrent": "task01_cmdutil_datetime.js",
+    "add": "task01_cmdutil_datetime_add.js",
+    "sub": "task01_cmdutil_datetime_sub.js"
+}
 
 2. Первой строкой в файле task01_cmdutil_datetime.js прописать
 
