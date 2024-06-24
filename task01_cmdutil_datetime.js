@@ -4,17 +4,21 @@ const yargs = require('yargs/yargs')            // Подключаем паке
 const { hideBin } = require('yargs/helpers')    // Подключаем хелпер - это сокращение от process.argv.slice(2)
 
 const argv = yargs(hideBin(process.argv))       // Обрабатываем аргументы
-    .option('params1', {
-        alias: "p1",
+    .option('year', {
+        alias: "y",
         type: "boolean",
-        description: "params 1 descr" 
+        description: "Текущий год" 
     })
-    .option('params2', {
-        alias: "p2",
-        type: "string",
-        description: "params 2 descr", 
-        default: "def params 2"
-    })
+    .option('month', {
+        alias: "m",
+        type: "boolean",
+        description: "Текущий месяц" 
+    }) 
+    .option('date', {
+        alias: "d",
+        type: "boolean",
+        description: "Дата в календарном месяце" 
+    })     
     .argv
 
-console.log(argv)
+console.log(new Date())
