@@ -1,13 +1,14 @@
 ----------------Для задание короткой команды для терминала:----------------
 1. В package.json добаить раздел
 
-"bin": {
+  "bin": {
     "mycurrent": "task01_cmdutil_datetime.js",
     "add": "task01_cmdutil_datetime_add.js",
-    "sub": "task01_cmdutil_datetime_sub.js"
-}
+    "sub": "task01_cmdutil_datetime_sub.js",
+    "guess": "task02_cmdutil_guess_number.js"
+  },
 
-2. Первой строкой в файле task01_cmdutil_datetime.js прописать
+2. Первой строкой в файлах js прописать
 
 #!/usr/bin/env node
 
